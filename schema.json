@@ -1,0 +1,69 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "colour-picker",
+    "friendlyName": "Colour Picker",
+    "description": "A hex colour picker form field component 🎨",
+    "icon": "ColorWheel",
+    "showSettingsBar": true,
+    "settings": [
+      {
+        "type": "field/string",
+        "label": "Field",
+        "key": "field",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Label",
+        "key": "label"
+      },
+      {
+        "type": "select",
+        "label": "Preview Size",
+        "key": "previewSize",
+        "defaultValue": 24,
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": 14
+          },
+          {
+            "label": "Small",
+            "value": 18
+          },
+          {
+            "label": "Medium",
+            "value": 24
+          },
+          {
+            "label": "Large",
+            "value": 32
+          },
+          {
+            "label": "Extra Large",
+            "value": 48
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+
+      {
+        "type": "number",
+        "label": "Custom Size (px)",
+        "key": "customPreviewSize",
+        "defaultValue": 24,
+        "dependsOn": {
+          "setting": "previewSize",
+          "value": "custom"
+        }
+      }
+    ]
+  }
+}
