@@ -128,6 +128,6 @@
   }
   .spectrum-FieldLabel--right,
   .spectrum-FieldLabel--left {
-    padding-right: var(--spectrum-global-dimension-size-200);
+    padding-right: var(--spectrum-global-dimension-size-300);
   }
 </style>
