@@ -17,15 +17,19 @@
   let color;
   let fieldApi;
   let fieldState;
+  let background = "#ffffff";
 
   const formApi = formContext?.formApi;
   const labelPos = fieldGroupContext?.labelPosition || "above";
 
   $: previewDim = previewSize === "custom" ? customPreviewSize : previewSize;
 
-  $: background = getComputedStyle(
-    document.getElementById("theme-root")
-  ).getPropertyValue("--navBackground");
+  $: {
+    const themeRoot = document.getElementById("theme-root");
+    background = themeRoot
+      ? getComputedStyle(themeRoot).getPropertyValue("--navBackground")
+      : "#ffffff";
+  }
 
   $: formStep = formStepContext ? $formStepContext || 1 : 1;
   $: formField = formApi?.registerField(

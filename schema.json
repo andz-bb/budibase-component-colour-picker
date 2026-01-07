@@ -1,6 +1,8 @@
 {
   "type": "component",
-  "metadata": {},
+  "metadata": {
+    "svelteMajor": 5
+  },
   "schema": {
     "name": "colour-picker",
     "friendlyName": "Colour Picker",
@@ -53,7 +55,6 @@
           }
         ]
       },
-
       {
         "type": "number",
         "label": "Custom Size (px)",
