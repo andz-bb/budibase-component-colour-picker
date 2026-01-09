@@ -1,5 +1,5 @@
 # Budibase Hex Colour Picker
-### [2026 update] Requires Budibase 3.23.48 or higher to run - [read more here](https://github.com/Budibase/budibase/discussions/17316)
+### [2026 update] Requires Budibase 3.24 or higher to run - [read more here](https://github.com/Budibase/budibase/discussions/17316)
 
 ![colour picker demo](https://user-images.githubusercontent.com/110921612/208495272-330382cf-da2b-4399-9089-2036ac20a77c.gif)
 
