@@ -64,6 +64,12 @@
           "setting": "previewSize",
           "value": "custom"
         }
+      },
+      {
+        "type": "text",
+        "label": "Default value",
+        "key": "defaultValue",
+        "placeholder": "#000000"
       }
     ]
   }
